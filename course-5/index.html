@@ -41,7 +41,7 @@
                 console.log(props);
                 const date = new Date();
                 const thisYear = date.getFullYear();
-                return <h1 className="header">Copyright : { thisYear }</h1>
+                return <h1 style={{ color: props.color }}>Copyright : { thisYear }</h1>
             }
 
             const App = function(){
