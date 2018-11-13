@@ -33,6 +33,15 @@
         
             class Counter extends React.Component{
 
+                constructor(){
+                    super();
+
+                    this.state = {
+                        count: 2
+                    };
+
+                }
+
                 handleSubtract(){
                     console.log("Subtracted!");
                 }
@@ -44,7 +53,7 @@
                 render(){
                     return <div>
                             <button onClick={ this.handleSubtract }>-</button>
-                            <span style={{ padding: '10px'}}>9</span>
+                            <span style={{ padding: '10px'}}> { this.state.count }</span>
                             <button onClick={ this.handleAdd }>+</button>
                         </div>;
                 }
